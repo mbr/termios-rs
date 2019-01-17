@@ -181,4 +181,4 @@ pub const TCSAFLUSH: c_int = 2;
 
 // ioctls should be a c_uint, not a c_int. the warning cause by this should
 // be ignore until the bug in ioctl-rs is fixed.
-pub const TCGETS2: c_int = (0x802c_542a as c_int);
+pub const TCGETS2: c_int = (0x802c_542a_u32 as c_int);
